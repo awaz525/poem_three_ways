@@ -1,0 +1,186 @@
+body {
+    font-family: acumin-pro-condensed,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    background-color: white;
+}
+
+
+.title_page {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    text-align: center;
+    padding-top: 50vh;
+
+    grid-area: title;
+}
+
+.bold {
+    letter-spacing: 0.3em;
+    font-size: 5vw;
+    vertical-align: middle;
+}
+
+.thin {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    font-size: 1vw;
+    letter-spacing: 5px;
+}
+
+.red {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    font-size: 1vw;
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+        "rotate poem";
+    grid-template-columns: 1fr 2fr;
+}
+
+.poem {
+    background-color: none;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    font-size: 1vw;
+    
+    grid-area: poem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.row1 {
+    text-align: left;
+    margin: 1vw;
+}
+
+.row2 {
+    text-align: right;
+    margin: 1vw;
+}
+
+.row3 {
+    text-align: left;
+    margin: 1vw;
+}
+
+.row4 {
+    text-align: right;
+    margin: 1vw;
+}
+
+.row5 {
+    text-align: left;
+    margin: 1vw;
+}
+
+.row6 {
+    text-align: right;
+    margin: 1vw;
+}
+
+.row7 {
+    text-align: left;
+    margin: 1vw;
+}
+
+.row8 {
+    text-align: right;
+    margin: 1vw;
+}
+
+.rotate {
+    background-color: none;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    padding: 0;
+    position: absolute;
+    left: 20vw;
+    top: 79vw;
+    height: 33vw;
+    width: 225vh;
+
+    grid-area: rotate;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.watermark {
+    font-family: acumin-pro-condensed,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 0.8;
+    color: #DCDCDC;
+    letter-spacing: 0.6em;
+}
+
+.date {
+    font-family: acumin-pro-condensed,sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 3vh;
+    color: #DCDCDC;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    body {
+        background-color: white;
+    }
+
+    .poem {
+        font-size: 2vw;
+    }
+
+    .rotate {
+        top: 200vw;
+        left: 22vw;        
+    }
+
+    .red {
+        font-size: 2vw;
+    }
+
+    .thin {
+        font-size: 2vw;
+    }
+
+    .bold {
+        font-size: 8vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: white;
+    }
+
+    .poem {
+        font-size: 3vw;
+    }
+
+    .rotate {
+        top: 200vw;
+        left: 27vw;        
+    }
+
+    .red {
+        font-size: 4vw;
+    }
+
+    .thin {
+        font-size: 4vw;
+    }
+
+    .bold {
+        font-size: 10vw;
+    }
+}
